@@ -1,0 +1,28 @@
+.hero-container{
+    width: 100%;
+    height: 80vh;
+    background-color: aquamarine;
+    display: flex;
+    padding: 0px 20px;
+}
+
+.hero-left, .hero-right{
+
+}
+
+.hero-left{
+    width: 30%;
+    flex-grow: 0;
+    background-color: white;
+}
+
+.hero-large-text{
+    color: var(--deepthemepurple);
+    font-size: 2.5em;
+    font-weight: 700;
+}
+.hero-small-text{
+    color: #CDC9D5;
+    font-size: 1.1em;
+    font-weight: 700;
+}
