@@ -1,16 +1,24 @@
-.hero-container{
+.hero-container {
     width: 100%;
-    height: 80vh;
+    min-height: 80vh;
     background-color: white;
     display: flex;
     padding: 0px 20px;
+    /* border: 2px solid black; */
 }
 
-.hero-left, .hero-right{
-
+.hero-left, .hero-right {
+    /* clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%); */
 }
 
-.hero-left{
+.hero-right {
+    flex-grow: 0;
+    width: 75%;
+    /* height: 100%; */
+    /* background-color: #bada55; */
+}
+
+.hero-left {
     width: 35%;
     flex-grow: 0;
     background-color: white;
@@ -18,40 +26,105 @@
     flex-direction: column;
 }
 
-.hero-left-top{
+.hero-left-top {
     padding-left: 50px;
 }
 
-.hero-large-text{
+.hero-large-text {
     color: var(--deepthemepurple);
     font-size: 2.5em;
     font-weight: 700;
 }
-.hero-small-text{
+
+.hero-small-text {
     color: #CDC9D5;
     font-size: 1.1em;
     font-weight: 700;
 }
 
-.hero-links{
+.hero-links {
     display: flex;
     align-items: center;
     padding-left: 20px;
     /* border: 2px solid yellow; */
 }
-.hero-links .link{
+
+.hero-links .link {
     margin-left: 20px;
-    
 }
 
-.hero-left-down{
+.hero-left-down {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.hero-left-down p{
+.hero-left-down p {
     font-weight: 700;
     margin: 2em auto;
     color: var(--deepthemepurple);
+}
+
+.hero-right-down {
+    position: relative !important;
+    top: -9em !important;
+    top: 0;
+    height: 74%;
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.big-parallelogram-text{
+    background-color: #83CD94;
+    width: 70%;
+    height: 100%;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
+    display: flex;
+    padding: 3em 0em;
+    padding-left: 16%;
+    overflow-x: visible !important;
+    
+}
+.big-parallelogram-text p{
+    color: #FBFBFB;
+    max-width: 40%;
+
+}
+.small-parallelogram-text{
+    background-color: #3F3FA1;
+    width: 50%;
+    height: 70%;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
+    display: flex;
+    padding: 3em 0em;
+    padding-left: 16%;
+    position: absolute !important;
+    left: 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 15%;
+
+    
+}
+.small-parallelogram-text p{
+    color: #FBFBFB;
+    font-size: 1.1em;
+    /* max-width: 40%; */
+
+}
+
+.hero-square-image{
+    height: 70%;
+    width: 33%;
+    position :absolute !important;
+    background-image: url(../../images/cameraboy.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    left: 30em;
 }
