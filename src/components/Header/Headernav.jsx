@@ -9,7 +9,7 @@ const Headernav = () => {
     return (
         <div className="headernav-container">
             <div className="header-left">
-                <h3 className="header-title">Adventours</h3>
+                <h2 className="header-title">Adventours</h2>
                 <div class="header-searchbox">
                     <FcSearch />
                     <span>Search it up ......</span>
