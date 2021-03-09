@@ -14,6 +14,10 @@ const Hero = () => {
     return (
         <div className="hero-container">
             <div className="firstpart">
+                <div className="herotexts hero-texts-med">
+                    <h4 className="hero-large-text">Life is either a daring adventure or nothing</h4>
+                    <p className="hero-dec-text"><i>The way  up to the top of the mountain is always longer than you think, Don’t fool yourself. </i></p>
+                </div>
                 <div className="mobile-mini-nav">
                     <h5>We have</h5>
                     <a>{"Learn More   >"}</a>
@@ -32,19 +36,22 @@ const Hero = () => {
                         secondBig="95%"
                         secondSmall="Customer Return" />
                 </div>
-                <h4>What Excites you?</h4>
-                <RoundedIconWithText icon={MdDirectionsWalk} iconTitle="Trekking" iconDesc="Climbing the talest mountain in Yankari !" color="#3f3fa1" />
+                <div className="interests-container">
+
+                    <h4>What Excites you?</h4>
+                    <RoundedIconWithText icon={MdDirectionsWalk} iconTitle="Trekking" iconDesc="Climbing the talest mountain in Yankari !" color="#3f3fa1" />
                     <RoundedIconWithText icon={BiTrain} iconTitle="Rafting" iconDesc="Let’s meet the wildest river and raft on them !" color="#E88B0E" />
                     <RoundedIconWithText icon={GiAirplaneDeparture} iconTitle="Windsurfing" iconDesc="Didn”t see the tallest wave on a rainy day?" color="#8B101D" />
+                </div>
             </div>
             <Button className="floating-join-btn">
                 Join
             </Button>
             <div className="secondpart hero-right">
-                <h4 className="hero-large-text">Life is either a daring adventure or nothing</h4>
-                <p className="hero-dec-text"><i>The way  up to the top of the mountain is always
-longer than you think, Don’t fool yourself. </i></p>
-                {/* <img src={airplane} alt="airplane" /> */}
+                <div className="herotexts hero-texts-small">
+                    <h4 className="hero-large-text">Life is either a daring adventure or nothing</h4>
+                    <p className="hero-dec-text"><i>The way  up to the top of the mountain is always longer than you think, Don’t fool yourself. </i></p>
+                </div>
                 <div className="hero-right-down">
 
                     <div className="big-parallelogram-text">

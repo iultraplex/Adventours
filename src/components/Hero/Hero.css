@@ -8,11 +8,15 @@
     margin-top: 5px;
 }
 
-.firstpart{
+.hero-texts-med{
+    display: none;
+}
+
+.firstpart {
     order: 2;
 }
 
-.secondpart{
+.secondpart {
     order: 1;
 }
 
@@ -38,7 +42,7 @@
     justify-content: flex-end;
 }
 
-.floating-join-btn{
+.floating-join-btn {
     color: red;
     position: absolute;
     top: 83vh;
@@ -47,7 +51,7 @@
     color: var(--deepthemepurple);
     font-weight: 700;
     font-size: 1.3em;
-    background-color: white; 
+    background-color: white;
     padding: 0em 2em;
 }
 
@@ -56,24 +60,23 @@
     font-size: 2.3em;
     font-weight: 700;
     margin-bottom: -4px;
-    line-height:40px;
+    line-height: 40px;
 }
 
-.hero-dec-text{
+.hero-dec-text {
     color: #a09ba8;
     margin-right: 20px;
     line-height: 20px;
     text-indent: 20px;
 }
 
-
-.big-parallelogram-text, .small-parallelogram-text{
+.big-parallelogram-text, .small-parallelogram-text {
     clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
     display: flex;
     border-radius: 10px;
 }
 
-.big-parallelogram-text{
+.big-parallelogram-text {
     background-color: #83CD94;
     width: 90%;
     height: 100%;
@@ -81,9 +84,9 @@
     padding-left: 16%;
     overflow-x: visible !important;
     max-width: 389.235px;
-    
 }
-.small-parallelogram-text{
+
+.small-parallelogram-text {
     background-color: #3F3FA1;
     width: 70%;
     height: 50%;
@@ -95,15 +98,15 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding-right: 15%; 
+    padding-right: 15%;
     max-width: 220.750px;
 }
 
-.hero-square-image{
+.hero-square-image {
     height: 55%;
     border-radius: 20px;
     width: 55%;
-    position :absolute !important;
+    position: absolute !important;
     background-image: url(../../images/cameraboy.jpg);
     background-color: var(--deepthemepurple);
     background-blend-mode: exclusion;
@@ -111,38 +114,83 @@
     background-repeat: no-repeat;
     background-position: right;
     left: 9em;
-    max-width:311.297px;
+    max-width: 311.297px;
 }
-
-
 
 /* Second part */
 
-.mobile-mini-nav{
+.mobile-mini-nav {
     display: flex;
     justify-content: space-around;
-    align-items:center;
+    align-items: center;
     margin-top: 1.5em;
-   
-}
-.mobile-mini-nav h5{
-    color: var(--deepthemepurple);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin:0px  !important;
-    line-height:10px;
-    font-weight: 500;
-   
-}
-.mobile-mini-nav a{
-    color: var(--themepurple);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin:0px i !important;
-    line-height:20px ;
-    font-weight: 500;
-   
 }
 
-.sqaurescontainer{
+.mobile-mini-nav h5 {
+    color: var(--deepthemepurple);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px !important;
+    line-height: 10px;
+    font-weight: 500;
+}
+
+.mobile-mini-nav a {
+    color: var(--themepurple);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px i !important;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.sqaurescontainer {
     display: flex;
     justify-content: space-between;
+}
+
+.interests-container {
+    /* max-width: 386.578px; */
+}
+
+@media only screen and (min-width:800px) {
+    .hero-container {
+        flex-direction: row;
+        padding: 0px 4em;
+    }
+    .hero-texts-small, .floating-join-btn, .sqaurescontainer{
+        display: none;
+    }
+    .hero-texts-med{
+        display: block;
+    }
+    .firstpart {
+        /* border: 2px solid blue; */
+        /* flex: 1 0 0%; */
+        width: 75%;
+        justify-content: space-between;
+    }
+    .secondpart {
+        order: 3;
+        /* border: 2px solid red; */
+        flex-grow: 1;
+    }
+    .small-parallelogram-text {
+        left: 45%;
+        height: 57%;
+    }
+    .hero-square-image {
+        left: 60%;
+    }
+    .hero-large-text {
+        margin-bottom: 1em;
+    }
+    .hero-dec-text {
+        margin-bottom: 1.5em;
+    }
+    .interests-container {
+        /* border: 2px solid red; */
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
