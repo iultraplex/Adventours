@@ -1,68 +1,79 @@
-/* *{
-    margin: 0 !important; 
-    padding: 0 !important;
-    box-sizing: border-box !important;
-} */
+nav {
+    box-shadow: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+}
 
-.headernav-container {
+.top-header-nav {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+}
+
+
+
+nav .nav-wrapper {
+    background-color:white !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    align-items: center !important;
+}
+.top-nav-left{
     display: flex;
-    border: 1px solid #F8F8F8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    align-items: center;
-    padding: 1em 1.3em;
+
+}
+nav .brand-logo {
+    position: relative;
+    left: 0;
+    -webkit-transform: none;
+    transform: none;
+    color: var(--deepthemepurple);
 }
 
-.header-title {
-    color: var(--themepurple);
-    margin: 0 !important;
+.mobile-screen-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: flex-end;
 }
+
+.mobile-screen-nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-navbar-search {
+    margin-right: 2em;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+}
+
+/* big search box */
 
 .header-searchbox {
     display: flex;
     align-items: center;
     border: 2px solid red;
     border-radius: 50px;
-    padding: 8px 10px;
-    padding-right: 35px !important;
+    padding: 0px 10px;
+    padding-right: 75px !important;
     border: 1px solid #FCFBFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-left: 10px;
+    margin: 3px 0px;
+    margin-left: 3em;
+    line-height: 8px;
 }
-.header-searchbox span{
+
+.header-searchbox span {
     margin-left: 5px;
     color: rgb(170, 164, 164);
-}
-
-.header-left, .header-right {
-    flex: 1;
-    display: flex;
-}
-
-.header-left {
-    /* border: 2px solid red; */
-    align-items: center;
-}
-
-.header-right {
-    /* border: 2px solid blue; */
-    display: flex;
-    justify-content: flex-end;
-}
-
-.header-quick-links {
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .links {
     color: var(--themepurple);
     font-weight: 700;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.header-button {
-    flex-shrink: 0;
-    flex-grow: 1;
 }

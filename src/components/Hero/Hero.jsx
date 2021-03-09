@@ -7,52 +7,59 @@ import { GiAirplaneDeparture } from 'react-icons/gi'
 import airplane from '../../images/airplane.png'
 
 import './Hero.css'
+import { Button } from 'react-materialize';
+import Squares from './Squares';
 
 const Hero = () => {
     return (
         <div className="hero-container">
-            <div className="hero-left">
-                <div className="hero-left-top">
-                    <p className="hero-large-text">Life is either a daring adventure or nothing </p>
-                    <p className="hero-small-text">Outdoor is where life happens</p>
-                    <div className="hero-links">
-                        <ParallelogramButton text="Join" />
-                        <a className="link" href="#">{"Learn More >"}</a>
-                    </div>
+            <div className="firstpart">
+                <div className="mobile-mini-nav">
+                    <h5>We have</h5>
+                    <a>{"Learn More   >"}</a>
                 </div>
-                <div className="hero-left-down">
-                    <p>What excites you most?</p>
-                    <RoundedIconWithText icon={MdDirectionsWalk} iconTitle="Trekking" iconDesc="Climbing the talest mountain in Yankari !" color="#3f3fa1" />
+                <div className="sqaurescontainer">
+                    <Squares
+                        backgroundColor="#3F3FA1"
+                        firstBig="4.9"
+                        firstSmall="Customer Rating"
+                        secondBig="50+"
+                        secondSmall="Monthly Adventures" />
+
+                    <Squares backgroundColor="#83CD94"
+                        firstBig="100+"
+                        firstSmall="Trusted Customers"
+                        secondBig="95%"
+                        secondSmall="Customer Return" />
+                </div>
+                <h4>What Excites you?</h4>
+                <RoundedIconWithText icon={MdDirectionsWalk} iconTitle="Trekking" iconDesc="Climbing the talest mountain in Yankari !" color="#3f3fa1" />
                     <RoundedIconWithText icon={BiTrain} iconTitle="Rafting" iconDesc="Let’s meet the wildest river and raft on them !" color="#E88B0E" />
                     <RoundedIconWithText icon={GiAirplaneDeparture} iconTitle="Windsurfing" iconDesc="Didn”t see the tallest wave on a rainy day?" color="#8B101D" />
-                </div>
             </div>
-
-            {/* clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%); */}
-            <div className="hero-right">
-                <img src={airplane} alt="airplane" />
+            <Button className="floating-join-btn">
+                Join
+            </Button>
+            <div className="secondpart hero-right">
+                <h4 className="hero-large-text">Life is either a daring adventure or nothing</h4>
+                <p className="hero-dec-text"><i>The way  up to the top of the mountain is always
+longer than you think, Don’t fool yourself. </i></p>
+                {/* <img src={airplane} alt="airplane" /> */}
                 <div className="hero-right-down">
 
                     <div className="big-parallelogram-text">
-                        <p> " <br /> Can’t think any of my photography adventure without Moremi.</p>
-
 
                     </div>
                     <div className="small-parallelogram-text">
-                        <p> We Have</p>
-                        <p>4.9 <MdStar/> </p>
-                        <p>Customers rating</p>
-                        <p>180+</p>
-                        <p>Monthly Adventures</p>
-                    </div>
 
+                    </div>
                     <div className="hero-square-image">
-                        
+
                     </div>
-
-
                 </div>
+
             </div>
+
         </div>
     )
 }

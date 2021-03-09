@@ -1,75 +1,36 @@
 .hero-container {
     width: 100%;
-    min-height: 80vh;
     background-color: white;
     display: flex;
+    flex-direction: column;
     padding: 0px 20px;
     /* border: 2px solid black; */
+    margin-top: 5px;
 }
 
-.hero-left, .hero-right {
-    /* clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%); */
+.firstpart{
+    order: 2;
+}
+
+.secondpart{
+    order: 1;
 }
 
 .hero-right {
+    display: flex;
+    flex-direction: column;
     flex-grow: 0;
-    width: 75%;
-    /* height: 100%; */
+    width: 100%;
+    height: 82vh;
+    /* border: 2px solid red; */
     /* background-color: #bada55; */
 }
 
-.hero-left {
-    width: 35%;
-    flex-grow: 0;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-}
-
-.hero-left-top {
-    padding-left: 50px;
-}
-
-.hero-large-text {
-    color: var(--deepthemepurple);
-    font-size: 2.5em;
-    font-weight: 700;
-}
-
-.hero-small-text {
-    color: #CDC9D5;
-    font-size: 1.1em;
-    font-weight: 700;
-}
-
-.hero-links {
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-    /* border: 2px solid yellow; */
-}
-
-.hero-links .link {
-    margin-left: 20px;
-}
-
-.hero-left-down {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.hero-left-down p {
-    font-weight: 700;
-    margin: 2em auto;
-    color: var(--deepthemepurple);
-}
-
 .hero-right-down {
-    position: relative !important;
-    top: -9em !important;
+    /* position: relative !important;
+    top: -9em !important; */
     top: 0;
-    height: 74%;
+    height: 100%;
     width: 100%;
     /* background-color: yellow; */
     display: flex;
@@ -77,54 +38,111 @@
     justify-content: flex-end;
 }
 
-.big-parallelogram-text{
-    background-color: #83CD94;
-    width: 70%;
-    height: 100%;
+.floating-join-btn{
+    color: red;
+    position: absolute;
+    top: 83vh;
+    left: 45%;
+    z-index: 99999999;
+    color: var(--deepthemepurple);
+    font-weight: 700;
+    font-size: 1.3em;
+    background-color: white; 
+    padding: 0em 2em;
+}
+
+.hero-large-text {
+    color: var(--deepthemepurple);
+    font-size: 2.3em;
+    font-weight: 700;
+    margin-bottom: -4px;
+    line-height:40px;
+}
+
+.hero-dec-text{
+    color: #a09ba8;
+    margin-right: 20px;
+    line-height: 20px;
+    text-indent: 20px;
+}
+
+
+.big-parallelogram-text, .small-parallelogram-text{
     clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
     display: flex;
+    border-radius: 10px;
+}
+
+.big-parallelogram-text{
+    background-color: #83CD94;
+    width: 90%;
+    height: 100%;
     padding: 3em 0em;
     padding-left: 16%;
     overflow-x: visible !important;
+    max-width: 389.235px;
     
-}
-.big-parallelogram-text p{
-    color: #FBFBFB;
-    max-width: 40%;
-
 }
 .small-parallelogram-text{
     background-color: #3F3FA1;
-    width: 50%;
-    height: 70%;
-    clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
-    display: flex;
+    width: 70%;
+    height: 50%;
     padding: 3em 0em;
     padding-left: 16%;
     position: absolute !important;
-    left: 6em;
+    left: 1.5em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding-right: 15%;
-
-    
-}
-.small-parallelogram-text p{
-    color: #FBFBFB;
-    font-size: 1.1em;
-    /* max-width: 40%; */
-
+    padding-right: 15%; 
+    max-width: 220.750px;
 }
 
 .hero-square-image{
-    height: 70%;
-    width: 33%;
+    height: 55%;
+    border-radius: 20px;
+    width: 55%;
     position :absolute !important;
     background-image: url(../../images/cameraboy.jpg);
+    background-color: var(--deepthemepurple);
+    background-blend-mode: exclusion;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
-    left: 30em;
+    left: 9em;
+    max-width:311.297px;
+}
+
+
+
+/* Second part */
+
+.mobile-mini-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    margin-top: 1.5em;
+   
+}
+.mobile-mini-nav h5{
+    color: var(--deepthemepurple);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0px  !important;
+    line-height:10px;
+    font-weight: 500;
+   
+}
+.mobile-mini-nav a{
+    color: var(--themepurple);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0px i !important;
+    line-height:20px ;
+    font-weight: 500;
+   
+}
+
+.sqaurescontainer{
+    display: flex;
+    justify-content: space-between;
 }

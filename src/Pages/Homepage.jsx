@@ -7,7 +7,7 @@ const Homepage = () => {
     return (
         <>
             <Header />
-            <Hero />
+            <Hero /> 
         </>
     )
 

@@ -9,8 +9,7 @@ const Header = () => {
 
     return (
         <div>
-            <Headernav/>
-           
+            <Headernav/> 
         </div>
 
     )
